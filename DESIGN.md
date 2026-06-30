@@ -1,6 +1,6 @@
 # GitBook MCP — Design
 
-Status: **v1 implemented, read-only. v2 semi-automated drafting (§10) implemented** — `propose_page_edit` prompt shipped in `src/index.ts`. Write capability designed in §4/§5 turned out to be unbuildable against GitBook's real API — see §9. Decisions confirmed by user marked ✅.
+Status: **v1 implemented, read-only. v2 semi-automated drafting (§10) implemented** — `propose_page_edit` prompt shipped in `src/prompts.ts`. Write capability designed in §4/§5 turned out to be unbuildable against GitBook's real API — see §9. Decisions confirmed by user marked ✅.
 
 ## 1. Decisions locked in (brainstorm)
 
@@ -263,4 +263,4 @@ Caveat, stated plainly: this is a textual guard inside a prompt response, not a 
 
 ## Next step
 
-Done — `propose_page_edit` shipped as 7th prompt in `src/index.ts`, `GITBOOK_EXCLUDED_SPACE_IDS` wired, README and PROMPTS.md updated.
+Done — `propose_page_edit` shipped as 7th prompt in `src/prompts.ts`, `GITBOOK_EXCLUDED_SPACE_IDS` wired, README and PROMPTS.md updated. (2026-06-30: `src/index.ts` split into `types.ts`/`client.ts`/`config.ts`/`tools.ts`/`prompts.ts` for maintainability — see `claudedocs/workflow_code-quality-refactor.md`.)
